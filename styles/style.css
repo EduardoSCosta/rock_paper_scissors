@@ -1,6 +1,7 @@
 body{
     margin: 0px;
     padding: 0px;
+    background-color: #e7e7e7;
 }
 
 #nav-container{
@@ -12,15 +13,39 @@ body{
     text-align: center;
 }
 
+#play-again{
+    background-color: #3c93f7;
+    color: #ffffff;
+    font-size: 14px;
+    border-style: none;
+    border-radius: 5px;
+    padding: 10px 15px 10px 15px;
+}
+
+#play-again:hover{
+    background-color: #3671b4;
+}
+
 #main-content{
     margin: 50px 0px 50px 0px;
     text-align: center;
 }
 
-#score{
+#scoreboard{
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
+}
+
+#scoreboard div{
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.scores{
+    padding: 0px;
+    margin: 0px;
+    font-size: 46px;
 }
 
 #choice{
@@ -34,8 +59,8 @@ body{
 }
 
 #options img{
-    height: 100px;
-    width: 100px;
+    height: 80px;
+    width: 80px;
     padding: 10px;
     border-width: 3px;
     border-color: black;
@@ -78,5 +103,5 @@ body{
 }
 
 #footer-container p{
-    margin: 0px 0px 0px 10px;
+    text-align: center;
 }

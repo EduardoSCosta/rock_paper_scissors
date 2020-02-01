@@ -5,28 +5,30 @@
 </head>
 <body>
     <nav id="nav-container">
-        <button>Play Again</button>
+        <button id="play-again" onclick="playAgain()">Play Again</button>
     </nav>
     <main id="main-content">
         <h1 id="game-title">Rock Paper Scissors</h1>
         <h2>Score</h2>
-        <div id="score">
-            <div id="your-container">
+        <div id="scoreboard">
+            <div id="your-scoreboard">
                 <p>Your Score</p>
-                <p id="your-score">0</p>
+                <p class="scores" id="your-score">0</p>
             </div>            
-            <div id="opponent-container">
+            <div id="opponent-scoreboard">
                 <p>Opponent Score</p>
-                <p id="opponent-score">0</p>
+                <p class="scores" id="opponent-score">0</p>
             </div>            
         </div>
-        <h2 id="choice">Choose One</h2>
+        <div id="options-container">
+            <h2 id="choice">Choose One</h2>
         <div id="options">
-            <img id="rock" src="./images/rock.png" alt="Rock">
-            <img id="paper" src="./images/paper.png" alt="Paper">
-            <img id="scissors" src="./images/scissors.png" alt="Scissors">
+            <img id="rock" src="./images/rock.png" alt="Rock" onclick="chooseRock()">
+            <img id="paper" src="./images/paper.png" alt="Paper" onclick="choosePaper()">
+            <img id="scissors" src="./images/scissors.png" alt="Scissors" onclick="chooseScissors()">
         </div>
-        <h2 id="result"></h2>
+        </div>
+        <h2 id="result">Result</h2>
         <p id="rules">Rules: Rock beats scissors, scissors beats paper and paper beats rock. Score 3 point first to win.</p>
     </main>
     <footer id="footer-container">
